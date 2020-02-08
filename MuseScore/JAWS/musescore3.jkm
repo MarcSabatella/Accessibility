@@ -1,0 +1,10 @@
+[Common Keys]
+Alt+RightArrow=PassKey
+Alt+LeftArrow=PassKey
+Alt+UpArrow=PassKey
+Alt+DownArrow=PassKey
+Control+UpArrow=PassKey
+Control+DownArrow=PassKey
+Control+RightArrow=PassKey
+Control+LeftArrow=PassKey
+JAWSKey+Q=ScriptFileName

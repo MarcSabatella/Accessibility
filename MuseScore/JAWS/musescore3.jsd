@@ -1,0 +1,19 @@
+:script ScriptFileName
+:SearchRank 1
+:Description If pressed twice quickly, shows the text in the Virtual ViewerUsed to identify the script file being used, and the application currently active.
+
+:script PassKey
+:SearchRank 1
+
+:function TypeAndSay
+:SearchRank 1
+
+:function PropertyChangedEvent
+:SearchRank 1
+:Param object/FSUIAElement No Description
+:Param int/PropertyID No Description
+:Param string/value No Description
+
+:function AutoStartEvent
+:SearchRank 1
+
