@@ -11,5 +11,5 @@ They merely help make sure MuseScore actually functions as expected with JAWS.
 For more information on using the accessibility features in MuseScore,
 see the [section on Accessibility in the MuseScore Handbook](https://musescore.org/en/handbook/3/accessibility).
 
-We are very deeply indebted to Peter Torpey(https://www.eyesonsuccess.net/) and [Doug Lee](http://www.dlee.org/)
+We are very deeply indebted to [Peter Torpey](https://www.eyesonsuccess.net/) and [Doug Lee](http://www.dlee.org/)
 for their assistance in developing this script!
