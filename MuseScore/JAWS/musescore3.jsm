@@ -1,6 +1,6 @@
 const
-	ScriptVersion = "1.0",
-	ReleaseDate = "February 8, 2020"
+	ScriptVersion = "1.0.1",
+	ReleaseDate = "February 11, 2020"
   
 messages
 @msgScriptInfo

@@ -18,7 +18,7 @@ CAPTION "${RELEASE} Setup"
 ; $R0 is a registry enumeration counter.
 ; Preserve any registers you modify in here!
 !macro JAWSVerCheck
-		${If} $R1 < 18.0
+		${If} $R1 < 11.0
 			${DetailPrint} "Skipping; incompatible with these scripts."
 			IntOp $R0 $R0 + 1
 			${Continue}
