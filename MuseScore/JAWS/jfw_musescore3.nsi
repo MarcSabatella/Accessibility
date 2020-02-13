@@ -405,7 +405,7 @@ Function JAWSProgramPathsToListItems
 		call getJAWSExeVersion
 		${DetailPrint} "JAWS $JAWSBuild:"
 		; Outlaw JAWS versions that are not fit for these scripts.
-		${If} $JAWSVersion < 18.0
+                ${If} $JAWSVersion < 11.0
 			${DetailPrint} "These scripts will not work with this version. Skipping this JAWS version."
 			${Continue}
 		${EndIf}
