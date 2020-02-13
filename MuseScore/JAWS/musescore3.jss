@@ -50,11 +50,13 @@ void Function FocusChangedEventEx (handle newWin, int newObj, int newChild, hand
 
 ;SayMessage(OT_MESSAGE, "focus changed")
 var
-	int role
-role = GetObjectRole()
+	int role,
+	object obj
+obj = GetCurrentObject(0)
+role = obj.accRole(0)
 if (role == ROLE_SYSTEM_CLIENT)
 	; navigating a palette scroll area (for example, the key signature selection in New Score Wizard)
-	; read current name (a name changed event was actually generated, but it is not seen by this script)
+	; read current name only (a name changed event was actually generated, but it is not seen by this script)
 	say(GetObjectName(), OT_STATUS)
 	return
 elif newWin == oldWin && newObj == oldObj && newChild == oldChild
@@ -88,7 +90,7 @@ void Function NameChangedEvent (handle win, int id, int child, int type, string 
 
 ;SayMessage(OT_MESSAGE, "name changed")
 ; TODO - make sure key signatures are read in new score wizard for both Qt 5.9 and 5.12
-; currently handled in FocusChanfedEventEx instead
+; currently handled in FocusChangedEventEx instead
 ; pass through
 NameChangedEvent(win, id, child, type, oldname, newname)
 
